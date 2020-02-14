@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex: 0 0 auto;
+    background-color: #e6e6e6;
+    height: 62px;
+    line-height: 24px;
+}
+
+.title {
+    color: blue;
+    padding: 18px;
+}
+
+.content {
+    display: flex;
+    flex: 1 0 auto;
+    margin: 0 auto;
+    height: calc(100vh - 62px);
+    width: 100%;
+    background-color: bisque;
+}
+
+.downIcon {
+    background: url("../image/angle-arrow-down_icon.png") no-repeat;
+    background-size: 60% auto;
+}
+.topmenu .downIcon,
+.submenu .downIcon {
+    height: 20px;
+    width: 20px;
+    margin: 6px 0 0 12px;
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    transition: .3s linear;
+}
+
+.topmenu {
+    display: flex;
+    flex-direction: row;
+    color: #aaadfd;
+}
+
+.topmenu > li {
+    position: relative;
+}
+
+.topmenu > li:first-child {
+    border-left: 0;
+}
+
+.topmenu > li > a {
+    padding: 20px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.submenu a:hover {
+    color: #ddbe86;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 2;
+    min-width: 200px;
+    margin: -4px 0 0 16px;
+    background: white;
+    border-left: 1px solid #cbcbcc;
+    border-right: 1px solid #cbcbcc;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+.menu:hover {
+    color: brown;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    font-size: 12px;
+    border-bottom: 1px solid #cbcbcc;
+}
+
+.submenu .submenu {
+    position: absolute;
+    top: 5px;
+    left: 100%;
+    margin-left: 0;
+    transition: .3s linear;
+}
+
+nav li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+}
