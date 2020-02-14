@@ -87,7 +87,7 @@ nav a {
 }
 
 .topmenu > li > a {
-    padding: 20px 30px;
+    padding: 18px 30px;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -101,7 +101,7 @@ nav a {
     position: absolute;
     z-index: 2;
     min-width: 200px;
-    margin: -4px 0 0 16px;
+    margin-left: 22px;
     background: white;
     border-left: 1px solid #cbcbcc;
     border-right: 1px solid #cbcbcc;
@@ -121,12 +121,13 @@ nav a {
 .submenu li a {
     padding: 10px 20px;
     font-size: 12px;
+    line-height: 26px;
     border-bottom: 1px solid #cbcbcc;
 }
 
 .submenu .submenu {
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 100%;
     margin-left: 0;
     transition: .3s linear;
