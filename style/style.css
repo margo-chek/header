@@ -16,14 +16,7 @@ html, body {
 }
 
 .mainContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 100%;
-    text-align: center;
     font-size: 16px;
-    line-height: 32px;
 }
 
 .header {
@@ -50,18 +43,6 @@ html, body {
     background-color: bisque;
 }
 
-.downIcon {
-    background: url("../image/angle-arrow-down_icon.png") no-repeat;
-    background-size: 60% auto;
-}
-.topmenu .downIcon,
-.submenu .downIcon {
-    height: 20px;
-    width: 20px;
-    margin: 6px 0 0 12px;
-    color: inherit;
-}
-
 nav ul {
     list-style: none;
 }
@@ -72,29 +53,33 @@ nav a {
     transition: .3s linear;
 }
 
+.downIcon {
+    background: url("../image/angle-arrow-down_icon.png") no-repeat;
+    background-size: 60% auto;
+    margin: 8px 0 0 12px;
+    padding: 5px 10px 0 12px;
+    opacity: 0.8;
+}
+
 .topmenu {
     display: flex;
     flex-direction: row;
-    color: #aaadfd;
 }
 
 .topmenu > li {
     position: relative;
 }
 
-.topmenu > li:first-child {
-    border-left: 0;
-}
-
 .topmenu > li > a {
-    padding: 18px 30px;
+    padding: 19px 30px;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .submenu a:hover {
-    color: #ddbe86;
+    color: #086008;
+    opacity: 0.4;
 }
 
 .submenu {
@@ -105,13 +90,16 @@ nav a {
     background: white;
     border-left: 1px solid #cbcbcc;
     border-right: 1px solid #cbcbcc;
+    border-top: 1px solid #cbcbcc;
     visibility: hidden;
     opacity: 0;
     transition: .3s linear;
+    letter-spacing: 1px;
 }
 
 .menu:hover {
-    color: brown;
+    color: green;
+    opacity: 0.4;
 }
 
 .submenu li {
@@ -127,7 +115,7 @@ nav a {
 
 .submenu .submenu {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 100%;
     margin-left: 0;
     transition: .3s linear;
