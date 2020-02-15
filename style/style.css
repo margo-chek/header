@@ -81,24 +81,6 @@ nav a {
     opacity: 0.4;
 }
 
-.submenu {
-    position: absolute;
-    z-index: 2;
-    min-width: 200px;
-    margin-left: 22px;
-    letter-spacing: 1px;
-    background: #fff;
-    border-left: 1px solid #cbcbcc;
-    border-right: 1px solid #cbcbcc;
-    border-top: 1px solid #cbcbcc;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
-}
-
 .menuItem:hover {
     color: green;
     opacity: 0.4;
@@ -126,10 +108,4 @@ nav a {
 nav li:hover > .submenu {
     visibility: visible;
     opacity: 1;
-}
-
-.load * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
 }

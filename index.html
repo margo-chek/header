@@ -4,12 +4,6 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style/style.css">
         <title>Header test</title>
-        <script>
-            document.addEventListener("DOMContentLoaded", remove);
-            function remove() {
-                document.querySelector(".load").classList.remove("load");
-            }
-        </script>
     </head>
     <body class="load">
         <div class="mainContainer">
@@ -57,5 +51,24 @@
             </div>
             <div class="content"></div>
         </div>
+    <style>
+        .submenu {
+            position: absolute;
+            z-index: 2;
+            min-width: 200px;
+            margin-left: 22px;
+            letter-spacing: 1px;
+            background: #fff;
+            border-left: 1px solid #cbcbcc;
+            border-right: 1px solid #cbcbcc;
+            border-top: 1px solid #cbcbcc;
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: .3s linear;
+            -moz-transition: .3s linear;
+            -o-transition: .3s linear;
+            transition: .3s linear;
+        }
+    </style>
     </body>
 </html>
